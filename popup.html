@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert Formatter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h3>Format Alert Message</h3>
+    <label for="issue">Issue Description:</label>
+    <textarea id="issue" placeholder="Enter issue description"></textarea>
+
+    <label for="time">Time:</label>
+    <input id="time" type="text" placeholder="Enter time (e.g., 2024-11-26 18:30 UTC)">
+
+    <label for="region">Region:</label>
+    <input id="region" type="text" placeholder="Enter region (e.g., us-east-1)">
+
+    <label for="details">Additional Details:</label>
+    <textarea id="details" placeholder="Enter additional details"></textarea>
+
+    <button id="copyButton">Copy to Clipboard</button>
+    <p id="confirmation" style="display: none; color: green;">Message copied!</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
